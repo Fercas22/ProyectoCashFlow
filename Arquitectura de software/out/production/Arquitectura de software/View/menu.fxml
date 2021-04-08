@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.menuController">
+   <top>
+      <AnchorPane prefHeight="80.0" prefWidth="600.0" style="-fx-background-color: #125182;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="WHITE" layoutX="246.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Finanzas" wrappingWidth="208.14996337890625">
+               <font>
+                  <Font name="Segoe UI Black" size="48.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </top>
+   <right>
+      <AnchorPane prefHeight="320.0" prefWidth="705.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="exit" layoutX="636.0" layoutY="275.0" mnemonicParsing="false" onMouseClicked="#exitOnMouseClicked" style="-fx-background-color: #125182;" text="Salir" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Semibold Italic" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="categoria" layoutX="14.0" layoutY="180.0" mnemonicParsing="false" onMouseClicked="#categoriaOnMouseClicked" prefWidth="198.4" style="-fx-background-color: #BD2F2F;" text="Categoría" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Semibold Italic" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="flujo" layoutX="251.0" layoutY="180.0" mnemonicParsing="false" onMouseClicked="#flujoOnMouseClicked" prefHeight="39.2" prefWidth="198.4" style="-fx-background-color: #BD2F2F;" text="Flujo de efectivo" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Semibold Italic" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="dinero" layoutX="487.0" layoutY="180.0" mnemonicParsing="false" onMouseClicked="#dineroOnMouseClicked" style="-fx-background-color: #BD2F2F;" text="Indicadores de dinero" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Semibold Italic" size="18.0" />
+               </font>
+            </Button>
+            <Text layoutX="282.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reporte mensual">
+               <font>
+                  <Font name="Segoe UI Semibold Italic" size="18.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="reporte" fitHeight="70.0" fitWidth="70.0" layoutX="315.0" layoutY="25.0" onMouseClicked="#reporteOnMouseClicked" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
